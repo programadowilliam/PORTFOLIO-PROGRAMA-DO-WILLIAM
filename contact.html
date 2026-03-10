@@ -34,10 +34,30 @@
             <h2>CONTATO</h2>
          </header>
 
+            <!--IMAGENS E TEXTO DE CONTATO-->
+
+         <!--O onclick é um evento que é acionado quando o usuário clica no elemento-->
+         <!--O copiarEmail() é uma função JavaScript que copia o email para a área de transferência-->
+
+         <!--O recuros span é usado para agrupar elementos e aplicar estilos-->
          <footer class="contato">   
             <img src="image/ico/e-mail.png" alt="">
-            <h3>EMAIL: contatowilliamlimapro@gmail.com</h3>
+            <h3 class="destaquecontato">EMAIL:</h3>
+          <h3 onclick="copiarEmail()" style="cursor: pointer;"><span id="meuEmail">contatowilliamlimapro@gmail.com</span>
+</h3>
          </footer>
+
+         <br><br>
+
+         <footer class="contato">   
+            <img src="image/ico/youtube.png" alt="">
+            <h3 class="destaquecontato">YOUTUBE:</h3>
+        <a href="https://www.youtube.com/@programadowilliam">
+            <h3>PROGRAMA DO WILLIAM</h3>
+        </a>
+         </footer>
+
+
 
          <main>
             <section>
@@ -70,5 +90,7 @@
             <p>Youtube</p>
         </a>    
         </footer>
+        <!--o Script src serve para linkar o arquivo JavaScript-->
+        <script src="index.js"></script>
 </body>
 </html>
