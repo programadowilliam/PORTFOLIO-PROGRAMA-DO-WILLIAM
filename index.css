@@ -7,6 +7,67 @@ body{
     font-family: Arial, Helvetica, sans-serif
 }
 
+
+            /* SCROLLBAR COLORIDA*/
+
+        
+/*O que é o WebKit?
+O WebKit é o "motor" (engine) de renderização de alguns dos navegadores mais famosos do mundo. Pense nele como o motor de um carro: o navegador é a carcaça (o design, os botões), mas quem realmente lê o código HTML/CSS e desenha a página na tela é o motor.*/
+
+/* Para Firefox */
+html {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(52, 255, 79) rgb(0, 0, 0);
+}
+
+/* Para Chrome, Edge e Safari */
+::-webkit-scrollbar {
+  width: 12px;               /* Largura da barra */
+}
+
+::-webkit-scrollbar-track {
+  background: lavender;      /* Cor da trilha (fundo) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: mediumaquamarine;    /* Cor da barra em si */
+  border-radius: 10px;       /* Arredondamento */
+  border: 3px solid lavender; /* Cria um espaçamento ao redor da barra */
+}
+
+    /* MUDAR A COR DA SELEÇÃO DE TEXTO */
+::selection {
+    background-color: #5BBE42; /* Cor de fundo da seleção */
+    color: rgb(0, 0, 0);              /* Cor do texto selecionado */
+    text-shadow: 0 0 5px #5bbe42; /* Efeito de brilho na seleção */
+}
+
+
+
+
+/*ICONES DAA ABA CONTATO*/
+
+.contato {
+    display: flex;            /* Coloca os itens lado a lado */
+    justify-content: flex-start; /* Alinha tudo no INÍCIO (Esquerda) */
+    align-items: center;      /* Alinha verticalmente (centro da linha) */
+    gap: 12px;                /* Cria o espaço entre a imagem e o texto */
+    padding-left: 0;          /* Garante que não haja espaço sobrando na esquerda */
+}
+
+.contato h3 {
+    margin: 0;                /* Remove margens que vêm por padrão no h3 */
+}
+
+/* Você só mexe na img se o tamanho original dela estiver muito grande */
+.contato img {
+    height: 50px; 
+    width: auto;
+}
+
+
+
+
     ul {
         /*itens flexíveis*/
         display: flex;
