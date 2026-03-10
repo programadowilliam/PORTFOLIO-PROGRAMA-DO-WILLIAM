@@ -23,10 +23,21 @@ body{
     /*edita todos os textos "a"*/
 
     a{
-        color: green;
+        color: #5BBE42;
+        text-shadow: 0 0 5px #5bbe42;
+        
         /*retira a decoração de texto linha embaixo*/
         text-decoration: none;
     }
+
+a:hover{
+    color: #45aa03;
+    text-decoration: none;
+    text-shadow: 0 0 5px #5bbe42, 
+    0 0 10px #fff,
+    0 0 20px #5bbe42,
+    0 0 40px #5bbe42;
+    transition: 0.4s;}
 
     header img{
         width: 150px;
@@ -35,7 +46,6 @@ body{
         border-radius: 50%;
         /*borda com cores*/
         border: 5px solid #5BBE42;
-
     }
     .center{
         text-align: center;
@@ -43,9 +53,12 @@ body{
 
     h1{
         color: #5BBE42;
+        text-shadow: 0 0 5px #5bbe42;
+        text-align: center;
     }
     h2{
-        color: aqua;
+        color: #00ffff;
+        text-shadow: 0 0 5px #00ffff
     }
 
     footer img{
@@ -67,3 +80,10 @@ body{
     footer p{
         margin-top: 2px;
     }
+
+   /*MUDAR O VISUAL DE OUTRA PAGINA, 1 COLOQUE O BODY/estrutura do html E LOGO NELE O CLASS E VENHA AQUI*/
+
+    .pagina-contato{
+        background-color: #1a1a1a;
+    }
+
