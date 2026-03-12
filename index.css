@@ -52,6 +52,155 @@ html {
 
 
 
+
+
+        /*estilização das imagens dos certificados*/
+
+
+.divcertificados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-content: center;    /* Centraliza verticalmente (se o container tiver altura) */
+  gap: 20px;               /* Cria espaço entre os blocos de forma organizada */
+  max-width: 800px;        /* Limita a largura para forçar a quebra em 2x2 */
+  margin: 0 auto;          /* Centraliza o bloco inteiro na tela */
+  padding: 20px;
+}
+
+.cardcertificado {
+  width: 320px;            /* Define uma largura fixa para o conjunto (imagem + texto) */
+  text-align: center;      /* Centraliza o texto abaixo da imagem */
+}
+
+.cardcertificado:hover {color: #00ffff;
+    text-decoration: none;
+    text-shadow: 0 0 5px #00ffff, 
+    0 0 10px #fff,
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
+    transition: 0.4s; }
+
+.divcertificados img {
+  width: 100%;             /* A imagem ocupa 100% da largura do .card (320px) */
+  height: auto;
+  border: 3px solid #00ffff;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  border-radius: 8px;      /* Opcional: deixa as pontas levemente arredondadas */
+}
+
+                /* 2. O efeito Neon no Hover */
+.divcertificados img:hover {
+  /* Aumenta o brilho externo (mais camadas = mais luz) */
+  box-shadow: 0 0 15px #00ffff, 
+              0 0 30px #00ffff, 
+              0 0 45px #00ffff;
+  
+  /* Deixa a borda mais clara para parecer que o filamento esquentou */
+  border-color: #00ffff; 
+  
+  /* Opcional: aumenta levemente o tamanho da imagem */
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+        /* --- CONFIGURAÇÃO PARA CELULAR (MOBILE) --- */
+@media (max-width: 768px) {
+  .divcertificados {
+    gap: 10px; /* Diminui o espaço entre os cards no celular */
+    padding: 10px;
+  }
+
+  .cardcertificado {
+    /* Faz cada card ocupar quase metade da tela (45%) */
+    width: 45%; 
+    min-width: 140px; /* Garante que não fique pequeno demais */
+  }
+
+
+
+  .textocard {
+    font-size: 12px; /* Diminui um pouco o texto para caber no card menor */
+  }
+}
+
+/*----------------*/
+.textocardcertificados{
+        color: #00ffff;
+        text-shadow: 0 0 5px #00ffff;
+        font-size: 20px;
+        /*aumenta o tamanho da imagem */
+
+    }
+
+.textocardcertificados:hover{
+    color: #00ffff;
+    text-decoration: none;
+    text-shadow: 0 0 5px #00ffff, 
+    0 0 10px #fff,
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
+      /* translateY(-8px) faz subir 8 pixels */
+    /* scale(1.05) aumenta levemente o tamanho */
+    transform: translateY(-8px) scale(1.05);
+    
+    cursor: pointer;
+    transition: 0.4s; }
+
+
+
+
+
+
+            /*CERTIFICADO C1 GRANDE*/
+.cardcertificadoc1 {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-content: center;    /* Centraliza verticalmente (se o container tiver altura) */
+  gap: 20px;               /* Cria espaço entre os blocos de forma organizada */
+  max-width: 800px;        /* Limita a largura para forçar a quebra em 2x2 */
+  margin: 0 auto;          /* Centraliza o bloco inteiro na tela */
+  padding: 20px;
+}
+
+/*mudar o tamanho da img do certificado c1*/
+.cardcertificadoc1 img {
+  width: 210%;             /* A imagem ocupa 100% da largura do .card (320px) */
+  height: auto;
+  border: 3px solid #5BBE42;
+  box-shadow: 0 0 10px #5BBE42, 0 0 20px #5BBE42;
+  border-radius: 8px;      /* Opcional: deixa as pontas levemente arredondadas */
+}
+
+/* --- CONFIGURAÇÃO PARA CELULAR (MOBILE) --- */
+@media (max-width: 768px) {
+  .cardcertificadoc1 {
+    gap: 10px; /* Diminui o espaço entre os cards no celular */
+    /*o padding serve para.. */
+    padding: 10px;
+  }
+
+  .cardcertificadoc1 {
+    /* Faz cada card ocupar quase metade da tela (45%) */
+    width: 50%; 
+    min-width: 140px; /* Garante que não fique pequeno demais */
+  }
+}
+
+
+
+
+
+
+
 /*ICONES DAA ABA CONTATO*/
 
 .contato {
@@ -60,12 +209,14 @@ html {
     align-items: center;      /* Alinha verticalmente (centro da linha) */
     gap: 12px;                /* Cria o espaço entre a imagem e o texto */
     padding-left: 0;          /* Garante que não haja espaço sobrando na esquerda */
+
+    /*isso se adpta no celular, os itens vão para baixo, um embaixo do outro*/
     flex-wrap: wrap;    /* Permite que os itens quebrem para a próxima linha */
 }
 
 .contato h3 {
     margin: 0;                /* Remove margens que vêm por padrão no h3 */
-    flex-wrap: wrap;    /* Permite que os itens quebrem para a próxima linha */
+   
 }
 
 /* Você só mexe na img se o tamanho original dela estiver muito grande */
