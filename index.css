@@ -5,6 +5,12 @@ body{
     background: linear-gradient(to top, #000000, #000000, #34550a 150%);
     /*muda a fonte dos textos em tela*/
     font-family: Arial, Helvetica, sans-serif
+   
+}
+
+.container {
+  display: flex;       /* Ativa o Flexbox */
+  flex-wrap: wrap;    /* Permite que os itens quebrem para a próxima linha */
 }
 
 
@@ -85,7 +91,7 @@ html {
 
 
             /*estilização do menu de navegação*/
-
+    /*estilização do menu de navegação*/
     ul {
         /*itens flexíveis*/
         display: flex;
