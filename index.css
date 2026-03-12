@@ -10,7 +10,7 @@ body{
 
 .container {
   display: flex;       /* Ativa o Flexbox */
-  flex-wrap: wrap;    /* Permite que os itens quebrem para a próxima linha */
+  
 }
 
 
@@ -60,10 +60,12 @@ html {
     align-items: center;      /* Alinha verticalmente (centro da linha) */
     gap: 12px;                /* Cria o espaço entre a imagem e o texto */
     padding-left: 0;          /* Garante que não haja espaço sobrando na esquerda */
+    flex-wrap: wrap;    /* Permite que os itens quebrem para a próxima linha */
 }
 
 .contato h3 {
     margin: 0;                /* Remove margens que vêm por padrão no h3 */
+    flex-wrap: wrap;    /* Permite que os itens quebrem para a próxima linha */
 }
 
 /* Você só mexe na img se o tamanho original dela estiver muito grande */
